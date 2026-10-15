@@ -1,8 +1,8 @@
 using System.Windows;
 using System.Windows.Input;
-using OpenSourceDictate.Input;
+using Murmur.Input;
 
-namespace OpenSourceDictate;
+namespace Murmur;
 
 /// <summary>Captures a new push-to-talk hotkey from the keyboard.</summary>
 public partial class HotkeyWindow : Window

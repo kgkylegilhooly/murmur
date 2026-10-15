@@ -1,18 +1,18 @@
 using System.IO;
 using System.Text.Json;
 
-namespace OpenSourceDictate.Settings;
+namespace Murmur.Settings;
 
-/// <summary>Reads and writes settings.json under %AppData%\OpenSourceDictate.</summary>
+/// <summary>Reads and writes settings.json under %AppData%\Murmur.</summary>
 public static class SettingsStore
 {
     private static readonly JsonSerializerOptions JsonOptions = new() { WriteIndented = true };
 
     public static string AppDataFolder { get; } =
-        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "OpenSourceDictate");
+        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Murmur");
 
     public static string RecordingsFolder { get; } =
-        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "OpenSourceDictate", "Recordings");
+        Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Murmur", "Recordings");
 
     private static string SettingsPath => Path.Combine(AppDataFolder, "settings.json");
 

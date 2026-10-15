@@ -1,4 +1,4 @@
-namespace OpenSourceDictate.Settings;
+namespace Murmur.Settings;
 
 public sealed class AppSettings
 {

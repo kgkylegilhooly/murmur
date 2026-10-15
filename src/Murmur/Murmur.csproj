@@ -10,8 +10,8 @@
     <UseWindowsForms>true</UseWindowsForms>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <RootNamespace>OpenSourceDictate</RootNamespace>
-    <AssemblyName>OpenSourceDictate</AssemblyName>
+    <RootNamespace>Murmur</RootNamespace>
+    <AssemblyName>Murmur</AssemblyName>
     <Version>0.1.0</Version>
   </PropertyGroup>
 

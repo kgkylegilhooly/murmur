@@ -1,9 +1,9 @@
 using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Windows.Input;
-using static OpenSourceDictate.Input.NativeMethods;
+using static Murmur.Input.NativeMethods;
 
-namespace OpenSourceDictate.Input;
+namespace Murmur.Input;
 
 /// <summary>
 /// Watches the keyboard system-wide with a low-level hook and raises

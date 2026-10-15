@@ -1,7 +1,7 @@
 using System.IO;
 using NAudio.Wave;
 
-namespace OpenSourceDictate.Audio;
+namespace Murmur.Audio;
 
 /// <summary>
 /// Records the microphone straight to a 16 kHz, 16-bit mono WAV file,

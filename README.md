@@ -1,4 +1,4 @@
-# Open Source Dictate
+# Murmur
 
 Free, local push-to-talk dictation for Windows. Hold a key, talk, let go, and your words are typed into whatever text field has focus. Speech recognition runs entirely on your PC (Whisper), so no audio leaves your machine.
 
@@ -19,9 +19,9 @@ Free, local push-to-talk dictation for Windows. Hold a key, talk, let go, and yo
 ## Build and run
 
 ```powershell
-git clone https://github.com/kgkylegilhooly/open-source-dictate.git
-cd open-source-dictate
-dotnet run --project src/OpenSourceDictate
+git clone https://github.com/kgkylegilhooly/murmur.git
+cd murmur
+dotnet run --project src/Murmur
 ```
 
 A microphone icon appears in the system tray. Hold **Right Ctrl** (the default) while you speak; the icon turns red while recording. Right-click the icon to change the hotkey or open the recordings folder.
@@ -30,8 +30,8 @@ A microphone icon appears in the system tray. Hold **Right Ctrl** (the default) 
 
 | What | Where |
 | --- | --- |
-| Settings | `%AppData%\OpenSourceDictate\settings.json` |
-| Recordings (last 20 kept) | `%LocalAppData%\OpenSourceDictate\Recordings` |
+| Settings | `%AppData%\Murmur\settings.json` |
+| Recordings (last 20 kept) | `%LocalAppData%\Murmur\Recordings` |
 
 `settings.json` options:
 

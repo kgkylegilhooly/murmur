@@ -1,13 +1,13 @@
 using System.Diagnostics;
 using System.Windows;
 using NAudio;
-using OpenSourceDictate.Audio;
-using OpenSourceDictate.Input;
-using OpenSourceDictate.Settings;
-using OpenSourceDictate.Tray;
+using Murmur.Audio;
+using Murmur.Input;
+using Murmur.Settings;
+using Murmur.Tray;
 using ToolTipIcon = System.Windows.Forms.ToolTipIcon;
 
-namespace OpenSourceDictate;
+namespace Murmur;
 
 public partial class App : Application
 {
@@ -21,11 +21,11 @@ public partial class App : Application
     {
         base.OnStartup(e);
 
-        _singleInstance = new Mutex(initiallyOwned: true, @"Local\OpenSourceDictate", out var isFirstInstance);
+        _singleInstance = new Mutex(initiallyOwned: true, @"Local\Murmur", out var isFirstInstance);
         if (!isFirstInstance)
         {
-            MessageBox.Show("Open Source Dictate is already running. Look for the microphone in the system tray.",
-                "Open Source Dictate", MessageBoxButton.OK, MessageBoxImage.Information);
+            MessageBox.Show("Murmur is already running. Look for the microphone in the system tray.",
+                "Murmur", MessageBoxButton.OK, MessageBoxImage.Information);
             Shutdown();
             return;
         }
@@ -47,7 +47,7 @@ public partial class App : Application
         _hook.Pressed += (_, _) => Dispatcher.BeginInvoke(StartRecording);
         _hook.Released += (_, _) => Dispatcher.BeginInvoke(StopRecording);
 
-        _tray.ShowMessage("Open Source Dictate is running", $"Hold {hotkey} to record.");
+        _tray.ShowMessage("Murmur is running", $"Hold {hotkey} to record.");
     }
 
     private void StartRecording()

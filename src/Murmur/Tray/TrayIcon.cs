@@ -1,9 +1,9 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
-using static OpenSourceDictate.Input.NativeMethods;
+using static Murmur.Input.NativeMethods;
 
-namespace OpenSourceDictate.Tray;
+namespace Murmur.Tray;
 
 /// <summary>The notification-area icon and its right-click menu.</summary>
 public sealed class TrayIcon : IDisposable
@@ -41,7 +41,7 @@ public sealed class TrayIcon : IDisposable
     public void SetHotkey(string hotkey)
     {
         _hotkeyItem.Text = $"Hold {hotkey} to dictate";
-        SetText($"Open Source Dictate: hold {hotkey} to dictate");
+        SetText($"Murmur: hold {hotkey} to dictate");
     }
 
     public void SetRecording(bool recording)

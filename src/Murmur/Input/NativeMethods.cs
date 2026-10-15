@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace OpenSourceDictate.Input;
+namespace Murmur.Input;
 
 internal static class NativeMethods
 {

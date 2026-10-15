@@ -1,6 +1,6 @@
 using System.Windows.Input;
 
-namespace OpenSourceDictate.Input;
+namespace Murmur.Input;
 
 /// <summary>
 /// A push-to-talk key: a main key plus any modifiers that must be held with it.
