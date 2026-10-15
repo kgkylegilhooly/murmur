@@ -1,0 +1,23 @@
+<Window x:Class="OpenSourceDictate.HotkeyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Choose push-to-talk key"
+        Width="380" SizeToContent="Height"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Topmost="True"
+        ShowInTaskbar="True">
+    <StackPanel Margin="20">
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,12">
+            Press the key, or key combination, you want to hold while you talk.
+            A single key such as Right Ctrl, F9 or Caps Lock works well.
+        </TextBlock>
+        <Border BorderBrush="#888" BorderThickness="1" CornerRadius="4" Padding="10" Margin="0,0,0,16">
+            <TextBlock x:Name="HotkeyText" FontSize="18" FontWeight="SemiBold" HorizontalAlignment="Center" />
+        </Border>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:Name="SaveButton" Content="Save" Width="80" Margin="0,0,8,0" Click="Save_Click" IsDefault="False" Focusable="False" />
+            <Button Content="Cancel" Width="80" Click="Cancel_Click" Focusable="False" />
+        </StackPanel>
+    </StackPanel>
+</Window>
